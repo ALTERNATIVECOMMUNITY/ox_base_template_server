@@ -21,13 +21,13 @@ Config.BankZones = {
 
 SendNotify = function(msg, type)
 
-	TriggerEvent('mythic_notify:client:SendAlert', {								-- https://github.com/antond15/mythic_notify
-		type = type,
-		text = msg,
-		length = 7500
-	})
-
-	-- TriggerEvent('esx:showNotification', msg)									-- Default GTA V notification.
+	--TriggerEvent('mythic_notify:client:SendAlert', {					-- https://github.com/antond15/mythic_notify
+	--	type = type,
+	--	text = msg,
+	--	length = 7500
+	--})
+	exports['notify1']:Alert("Information", msg, 2500, 'info')                              -- https://github.com/ChinoRD/dopeNotifyV2
+	-- TriggerEvent('esx:showNotification', msg)						-- Default GTA V notification.
 	-- TriggerEvent('t-notify:client:Alert', { style = type, message = msg })		-- https://github.com/TasoOneAsia/t-notify
 	-- TriggerEvent('b1g_notify:client:Notify', { type = type, text = msg })		-- https://github.com/CarlosVergikosk/B1G_NOTIFY
 
