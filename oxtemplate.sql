@@ -281,7 +281,6 @@ CREATE TABLE IF NOT EXISTS `licenses` (
 /*!40000 ALTER TABLE `licenses` DISABLE KEYS */;
 INSERT INTO `licenses` (`type`, `label`) VALUES
 	('dmv', 'Driving Permit'),
-	('drive', 'Drivers License'),
 	('drive_bike', 'Motorcycle License'),
 	('drive_truck', 'Commercial Drivers License'),
 	('drivers_license', 'Drivers License'),
