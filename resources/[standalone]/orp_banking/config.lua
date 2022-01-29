@@ -26,9 +26,8 @@ SendNotify = function(msg, type)
 	--	text = msg,
 	--	length = 7500
 	--})
-	exports['dopeNotifyV2']:Alert("Information", msg, 2500, 'info')                              -- https://github.com/ChinoRD/dopeNotifyV2
+	TriggerEvent('t-notify:client:Alert', { style = type, message = msg })                            
 	-- TriggerEvent('esx:showNotification', msg)						-- Default GTA V notification.
-	-- TriggerEvent('t-notify:client:Alert', { style = type, message = msg })		-- https://github.com/TasoOneAsia/t-notify
 	-- TriggerEvent('b1g_notify:client:Notify', { type = type, text = msg })		-- https://github.com/CarlosVergikosk/B1G_NOTIFY
 
 end
