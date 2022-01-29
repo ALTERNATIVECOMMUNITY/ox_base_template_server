@@ -10,7 +10,7 @@ RegisterCommand('cancel', function()
 	-- empty the command
 end)
 
-exports('Showidentification',function (data,slot)
+exports('showidentification',function (data,slot)
     exports.ox_inventory:useItem(data, function(data)
         if data then
             local item = exports.ox_inventory:Items("identification")
@@ -20,7 +20,7 @@ exports('Showidentification',function (data,slot)
         end
     end)
 end)
-exports('Showdrivers_license',function (data,slot)
+exports('showdrivers_license',function (data,slot)
     exports.ox_inventory:useItem(data, function(data)
         if data then
             local item = exports.ox_inventory:Items("drivers_license")
@@ -30,7 +30,7 @@ exports('Showdrivers_license',function (data,slot)
         end
     end)
 end)
-exports('Showfirearms_license',function (data,slot)
+exports('showfirearms_license',function (data,slot)
     exports.ox_inventory:useItem(data, function(data)
         if data then
             local item = exports.ox_inventory:Items("firearms_license")
