@@ -1,19 +1,14 @@
 return {
 	['testburger'] = {
-		label = 'Test Burger',
-		weight = 220,
-		degrade = 60,
-		limit = 3,
+		label = 'test burger',
+		weight = 1,
 		client = {
 			status = { hunger = 200000 },
 			anim = 'eating',
 			prop = 'burger',
 			usetime = 2500,
-			export = 'ox_inventory_examples.testburger'
+			--notification = 'this is just a test yo'
 		},
-		server = {
-			test = 'what an amazingly delicious burger, amirite?'
-		}
 	},
 
 	['bandage'] = {
@@ -39,7 +34,7 @@ return {
 			anim = 'eating',
 			prop = 'burger',
 			usetime = 2500,
-			notification = 'You ate a delicious burger'
+			--notification = 'You ate a delicious burger'
 		},
 	},
 
@@ -51,7 +46,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
 			usetime = 2500,
-			notification = 'You quenched your thirst with cola'
+			--notification = 'You quenched your thirst with cola'
 		}
 	},
 
@@ -166,7 +161,7 @@ return {
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
 			usetime = 2500,
-			notification = 'You.. drank mustard'
+			--notification = 'You.. drank mustard'
 		}
 	},
 
@@ -179,7 +174,7 @@ return {
 			prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
 			usetime = 2500,
 			cancel = true,
-			notification = 'You drank some refreshing water'
+			--notification = 'You drank some refreshing water'
 		}
 	},
 }
