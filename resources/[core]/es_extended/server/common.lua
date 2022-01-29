@@ -66,8 +66,7 @@ SetInterval(function()
 			if job == 'unemployed' then -- unemployed
 				--xPlayer.addAccountMoney('bank', salary)
 				TriggerEvent('dx-paycheck:AddMoneyEs_Extended',xPlayer, salary)
-				--TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
-				TriggerClientEvent('dopeNotify2:Alert', xPlayer.source, "success", _U('received_help', salary), 5000, 'success')
+				TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
 			elseif Config.EnableSocietyPayouts then -- possibly a society
 				TriggerEvent('esx_society:getSociety', xPlayer.job.name, function (society)
 					if society ~= nil then -- verified society
@@ -77,25 +76,21 @@ SetInterval(function()
 								TriggerEvent('dx-paycheck:AddMoneyEs_Extended',xPlayer, salary)
 								account.removeMoney(salary)
 
-								--TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
-								TriggerClientEvent('dopeNotify2:Alert', xPlayer.source, "success", _U('received_help', salary), 5000, 'success')
+								TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
 							else
-								--TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
-								TriggerClientEvent('dopeNotify2:Alert', xPlayer.source, "success", _U('received_help', salary), 5000, 'success')
+								TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
 							end
 						end)
 					else -- not a society
 						--xPlayer.addAccountMoney('bank', salary)
 						TriggerEvent('dx-paycheck:AddMoneyEs_Extended',xPlayer, salary)
-						--TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
-						TriggerClientEvent('dopeNotify2:Alert', xPlayer.source, "success", _U('received_help', salary), 5000, 'success')
+						TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
 					end
 				end)
 			else -- generic job
 				--xPlayer.addAccountMoney('bank', salary)
 				TriggerEvent('dx-paycheck:AddMoneyEs_Extended',xPlayer, salary)
-				--TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
-				TriggerClientEvent('dopeNotify2:Alert', xPlayer.source, "success", _U('received_help', salary), 5000, 'success')
+				TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'success', text = _U('received_help', salary), length = 4000, style = { ['background-color'] = '#3370a5', ['color'] = '#ffffff' } })
 			end
 		end
 	end
