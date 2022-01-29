@@ -176,18 +176,12 @@ ESX.RegisterCommand('loadjobs', 'admin', function()
 	Core.LoadJobs()
 end, true)
 
-ESX.RegisterCommand('erp', 'user', function(xPlayer, args, showError)
-	for _, playerId in ipairs(ESX.GetPlayers()) do
-		TriggerClientEvent('loffe_animations:openMenu', playerId)
-	end
-end, true)
-
 ESX.RegisterCommand('skin', 'admin', function(xPlayer, args, showError)
 	local _source = xPlayer.source
 	local target = tonumber(args[1])
 
 	if target and xPlayer ~= nil then
-		TriggerClientEvent('appearance_lua:openSaveableMenu', target)
+		TriggerClientEvent('fivem-appearance:openSaveableMenu', target)
 	else
 		TriggerClientEvent('chatMessage', _source, "SYSTEM:", {255, 0, 0}, "Invalid arguments.")
 		return
