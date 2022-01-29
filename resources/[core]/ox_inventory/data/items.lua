@@ -84,7 +84,7 @@ return {
         close = true,
         consume = 0,
         client = {
-            export = "qidentification.Showdrivers_license"
+            export = "qidentification.showdrivers_license"
         }
     },
 
@@ -95,18 +95,18 @@ return {
         close = true,
         consume = 0,
         client = {
-            export = "qidentification.Showidentification"
+            export = "qidentification.showidentification"
         }
     },
 
 	['firearms_license'] = {
-		label = 'Firearms License',
+	label = 'Firearms License',
         weight = 50,
         stack = false,
         close = true,
         consume = 0,
         client = {
-            export = "qidentification.Showfirearms_license"
+            export = "qidentification.showfirearms_license"
         }
     },
 
