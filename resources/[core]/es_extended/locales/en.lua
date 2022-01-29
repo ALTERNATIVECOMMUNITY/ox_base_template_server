@@ -41,8 +41,8 @@ Locales['en'] = {
   ['keymap_showinventory'] = 'show Inventory',
 
   -- Salary related
-  ['received_salary'] = 'you received your salary: ~g~$%s~s~',
-  ['received_help'] = 'you received your welfare check: ~g~$%s~s~',
+  ['received_salary'] = 'You received your salary: $%s',
+  ['received_help'] = 'You received your welfare check: $%s',
   ['company_nomoney'] = 'the company you\'re employeed at is too poor to pay out your salary',
   ['received_paycheck'] = 'received paycheck',
   ['bank'] = 'maze Bank',
