@@ -111,7 +111,7 @@ if ESX.GetConfig().Multichar then
 					if not Characters[index].model then
 						if Characters[index].sex == _('female') then skin.sex = 1 else skin.sex = 0 end
 					end
-					TriggerEvent('skinchanger:loadSkin', skin)
+					TriggerEvent('fivem-appearance:loadSkin', skin)
 				end
 				DoScreenFadeIn(400)
 			end)
@@ -127,7 +127,7 @@ if ESX.GetConfig().Multichar then
 				SetPlayerModel(PlayerId(), Characters[index].model)
 				SetModelAsNoLongerNeeded(Characters[index].model)
 			end
-			TriggerEvent('esx_skin:loadSkin', Characters[index].skin)
+			TriggerEvent('fivem-appearance:loadSkin', Characters[index].skin)
 		end
 		spawned = index
 		local playerPed = PlayerPedId()
