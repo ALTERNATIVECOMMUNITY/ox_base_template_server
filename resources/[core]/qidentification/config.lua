@@ -18,11 +18,11 @@ Config.IdentificationData = {
 		item = 'identification',
 		cost = 500,
 	},
-	{
-		label = "Drivers License",
-		item = 'drivers_license',
-		cost = 1500,
-	},
+	--{
+		--label = "Drivers License",
+		--item = 'drivers_license',
+		--cost = 1500,
+	--},
 	{
 		label = "Firearms License",
 		item = 'firearms_license',
