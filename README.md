@@ -16,7 +16,7 @@ With that being said, right out the gate everything will be working/usable but o
 * [esx_multicharacter](https://github.com/thelindat/esx_multicharacter)
 * [NPWD](https://github.com/project-error/npwd)
 * [fivem-appearance](https://github.com/ZiggyJoJo/brp-fivem-appearance)
-* [ev-hud](https://github.com/EntityEvolution/ev-hud)
+* [dxhud](https://github.com/0xDEMXN/dx_hud)
 
 ### Extras
 * [qidentification](https://github.com/katotekii/qidentification) - qidentification has been setup to tie weapon/driver's license item to actual license required by weaponshop for example.
